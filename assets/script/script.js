@@ -59,7 +59,7 @@ function ReiniciarPartida(){
 
 function refresh(){
     if(confirm("Vai arregar?")==true){
-        alert("Seu cagão de marca maior!")
+        alert("frangote(a)!")
     location.reload();
     }
 }
