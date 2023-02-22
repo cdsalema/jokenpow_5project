@@ -22,7 +22,7 @@ div{
     width: fit-content;
     font-size: 30px;
     background-color: #ccc;
-    margin-top: 250px ;
+    margin-top: 350px ;
     color: white;
 }
 #Desistir:hover{
@@ -34,4 +34,7 @@ button{
     background-color: transparent;
     border: none;
     cursor: pointer;
+}
+button:hover{
+    background-color: #f6f897;
 }
