@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-size: 48px;
+}
+h1,h2,p{
+    font-family: arial;
+    text-align: center;
+    margin: 25px auto;
+    padding: 35px auto;
+}
+p{
+    font-size: 35px;
+}
+div{
+    width: fit-content;
+    margin: 12px auto;
+}
+#Desistir{
+    width: fit-content;
+    font-size: 30px;
+    background-color: #ccc;
+    margin-top: 250px ;
+    color: white;
+}
+#Desistir:hover{
+    background-color: #8f8e8e;
+    
+}
+button{
+    font-size: 75px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}

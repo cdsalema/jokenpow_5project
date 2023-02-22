@@ -1,24 +1,28 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <title>Pedra, Papel e Tesoura</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-  </head>
-  <body>
-    <h1>Pedra, Papel e Tesoura</h1>
-    <div class="game">
-      <div class="options">
-        <button id="Pedra">Pedra</button>
-        <button id="Papel">Papel</button>
-        <button id="Tesoura">Tesoura</button>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/estilo.css">
+    <script src="assets/script/script.js"></script>
 
-      </div>
-      <div class="resultado">
-        <h2 id="result-text"></h2>
-        <button id="restart">Jogar novamente</button>
-      </div>
-    </div>
-    <script src="assets/script/jokenpow.js"></script>
-  </body>
+    <title>JOKEnPOW</title>
+</head>
+<body>
+    <h1>JOKEnPOW</h1>
+    <h2>BO5</h2>
+<div>
+    <button onclick="play('pedra')">✊</button>
+    <button onclick="play('papel')">🤚</button>
+    <button onclick="play('tesoura')">✌️</button>
+</div>
+<p>Você: <span id="placarPlayer">0</span></p>
+<p>Computador: <span id="placarPC">0</span></p>
+<div >
+    <button id="Desistir" onclick="refresh()">Desistir!</button>
+</div>
+    
+    
+</body>
 </html>
