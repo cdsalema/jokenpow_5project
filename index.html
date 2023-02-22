@@ -11,14 +11,18 @@
 </head>
 <body>
     <h1>JOKEnPOW</h1>
-    <h2>BO5</h2>
+    <div class="placar">
+        <h3>Placar</h3>
+        <h2>BO5</h2>
+        <p>Você:<span id="placarPlayer">0</span></p>
+        <p>Computador:<span id="placarPC">0</span></p>
+    </div>
 <div>
     <button onclick="play('pedra')">✊</button>
     <button onclick="play('papel')">🤚</button>
     <button onclick="play('tesoura')">✌️</button>
 </div>
-<p>Você: <span id="placarPlayer">0</span></p>
-<p>Computador: <span id="placarPC">0</span></p>
+
 <div >
     <button id="Desistir" onclick="refresh()">Desistir!</button>
 </div>

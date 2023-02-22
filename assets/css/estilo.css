@@ -3,18 +3,24 @@ body{
     padding: 0;
     background-image: linear-gradient(45deg, rgb(79, 136, 190), rgb(42, 65, 165));
 }
+.placar{
+    width: 325px;
+    background-color: rgb(72, 152, 228);
+    border-radius: 25px;
+}
 h1{
     font-size: 48px;
 }
-h1,h2,p{
+h1,h2,h3,p{
     font-family: arial;
     text-align: center;
     margin: 25px auto;
     padding: 35px auto;
     color:white;
 }
-p{
+p,h3{
     font-size: 35px;
+   
 }
 div{
     width: fit-content;
