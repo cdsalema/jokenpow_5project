@@ -11,11 +11,14 @@
  - [X] Jogada player escolhida com evento click;
  - [X] Disputa de melhor de 5;
  - [X] Placar da disputa de melhor de 5;
- - [X] Cammpo de mensagem de quem ganhou e perdeu cada disputa da melhor de 5;
+ - [X] Campo de mensagem : Informar - quem ganhou/perdeu cada disputa da melhor de 5;
  - [X] Mensagem de quem ganhou a partida;
- - [X] Botão de Desisitir(reinicia a partida);
+ - [X] Botão de Desistir(reinicia a partida);
  - [X] Controle de max de disputas a serem jogadas(no max 5).
  - [X] Reiniciar automático após o fim da partida.
+
+### Avançado:
+- [ ] Criar histórico de cada jogada feita na disputa. Qual opção escolhida na disputa 1, 2, 3 e na 4, 5 caso ocorram. Para ambos jogadores.
 
  ## deploy :
   - [X] <a href="https://jokenpow.netlify.app/"> clique aqui</a>
