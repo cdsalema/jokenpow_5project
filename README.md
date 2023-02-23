@@ -11,7 +11,7 @@
  - [X] Jogada player escolhida com evento click;
  - [X] Disputa de melhor de 5;
  - [X] Placar da disputa de melhor de 5;
- - [X] Cammpo de mensagem : Informar - quem ganhou/perdeu cada disputa da melhor de 5;
+ - [X] Campo de mensagem : Informar - quem ganhou/perdeu cada disputa da melhor de 5;
  - [X] Mensagem de quem ganhou a partida;
  - [X] Botão de Desistir(reinicia a partida);
  - [X] Controle de max de disputas a serem jogadas(no max 5).
