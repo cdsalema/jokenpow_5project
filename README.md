@@ -1,9 +1,9 @@
 ﻿# jokenpow_5project
  # Jogo JOKENPO
  
- ## riação do jogo JOKENPO em JS. Objetivo desse projeto é simplesmente treinar a utilização da linguagem JS sem muita preocupação com beleza da parte visual. 
+ ## Criação do jogo JOKENPO em JS. Objetivo desse projeto é simplesmente treinar a utilização da linguagem JS sem muita preocupação com beleza da parte visual do jogo. 
  ## Simplesmente fazer as mecanicas fucnionarem da melhor forma possível.
- utilizar Switch-case Statament é uma obrigação para esse estudo.
+ ## Utilizar Switch-case Statament é uma obrigação para esse estudo.
 
 ### lista de Funcionalidades:
 
