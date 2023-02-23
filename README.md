@@ -1,11 +1,11 @@
 ﻿# jokenpow_5project
- #Jogo JOKENPO
+ # Jogo JOKENPO
  
- ##<p>Criação do jogo JOKENPO em JS. Objetivo desse projeto é simplesmente treinar a utilização da linguagem JS sem muita preocupação com beleza da parte visual. </p>
- ##<p>Simplesmente fazer as mecanicas fucnionarem da melhor forma possível.
- utilizar Switch-case Statament é uma obrigação para esse estudo.</p>
+ ## riação do jogo JOKENPO em JS. Objetivo desse projeto é simplesmente treinar a utilização da linguagem JS sem muita preocupação com beleza da parte visual. 
+ ## Simplesmente fazer as mecanicas fucnionarem da melhor forma possível.
+ utilizar Switch-case Statament é uma obrigação para esse estudo.
 
-###lista de Funcionalidades:
+### lista de Funcionalidades:
 
  - [X] jogada aleatória do CPU;
  - [X] jogada player escolhida com evento click;
@@ -17,4 +17,5 @@
  - [X] Controle de max de disputas a serem jogadas(no max 5).
  - [X] Reiniciar automatico após o fim da partida.
 
- deploy <a href="https://jokenpow.netlify.app/"> clique aqui</a>
+ ## deploy :
+  - [X] <a href="https://jokenpow.netlify.app/"> clique aqui</a>
