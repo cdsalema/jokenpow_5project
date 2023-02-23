@@ -18,7 +18,7 @@
  - [X] Reiniciar automático após o fim da partida.
 
 ### Avançado:
-- [] Criar histórico de cada jogada feita na disputa. Qual opção escolhida na disputa 1, 2, 3 e na 4, 5 caso ocorram. Para ambos jogadores.
+- [ ] Criar histórico de cada jogada feita na disputa. Qual opção escolhida na disputa 1, 2, 3 e na 4, 5 caso ocorram. Para ambos jogadores.
 
  ## deploy :
   - [X] <a href="https://jokenpow.netlify.app/"> clique aqui</a>
