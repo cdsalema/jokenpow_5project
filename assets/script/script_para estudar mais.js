@@ -7,11 +7,11 @@ function GamePlay(jogadaPlayer) {
   const jogadaPC = jogadasPossiveis[jogadaRandom];
   console.log("JogadaPC: "+ jogadaPC);
 
-  // Check if it is a tie
+  // Check se foi empate
   if (jogadaPC === jogadaPlayer){
     alert('EMPATE!');
   } else {
-    // Set the winner and the loser sides
+    // Determina quem ganhou ou perdeu usando Operador lógio ternario
     const ladoVencedor = 'pedra' === jogadaPC ? jogadaPlayer : jogadaPC;
     const ladoPerdedor = jogadaPC === ladoVencedor ? jogadaPlayer : jogadaPC;
     
@@ -38,8 +38,38 @@ function GamePlay(jogadaPlayer) {
   document.querySelector('#placarPC').innerText = placarPC;
 }
 
-// Reset game score
+// Reset partida
 function ReiniciarPartida(){
   placarPC=0;
   placarPlayer=0;
 }
+
+/** código original do projeto.
+ * 
+ * if (jogadaPC===jogadaPlayer){
+        mensagem = "EMPATE!"
+    }else if (jogadaPC==="pedra"){
+        if(jogadaPlayer==="papel"){
+            mensagem =`GANHOU! escolhi ${PCescolha()}`
+            placarPlayer ++;
+        }
+        else {
+            mensagem =`PERDEU!! escolhi ${PCescolha()}`
+            placarPC ++
+        }
+    }else if(jogadaPC==="papel"){
+        if(jogadaPlayer === "tesoura"){
+            mensagem =`GANHOU! escolhi ${PCescolha()}`
+            placarPlayer ++;
+        }else {
+            mensagem =`PERDEU!! escolhi ${PCescolha()}`
+            placarPC ++
+        }
+    }else if(jogadaPC==="tesoura"){
+        if(jogadaPlayer === "pedra"){
+            mensagem =`GANHOU! escolhi ${PCescolha()}`
+            placarPlayer ++;
+        }else {
+            mensagem =`PERDEU!! escolhi ${PCescolha()}`
+            placarPC ++
+        }**/
