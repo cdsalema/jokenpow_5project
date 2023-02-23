@@ -1,6 +1,6 @@
 const jogadasPossiveis = ['pedra','papel','tesoura'];
 let placarPlayer = 0;
-let placarPC = 0;
+let placarPC = 0 + ``;
 let mensagem= "";
 let acabou = 0;
 
