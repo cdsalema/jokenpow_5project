@@ -18,15 +18,17 @@
         <p>Computador:<span id="placarPC">0</span></p>
 </div>
 <div>
-    <button onclick="play('pedra')">✊</button>
-    <button onclick="play('papel')">🤚</button>
-    <button onclick="play('tesoura')">✌️</button>
+    <button class="opcao" onclick="play('pedra')">✊</button>
+    <button class="opcao1" onclick="play('papel')">🤚</button>
+    <button class="opcao2" onclick="play('tesoura')">✌️</button>
 </div>
 
 <div >
-    <button id="Desistir" onclick="refresh()">Desistir!</button>
+    <button id="Desistir" onclick="desistir()">Desistir!</button>
 </div>
-    
+<div>
+<p id="resultado">Resultado:<span class="mensagem"></span></p>
+</div>
     
 </body>
 </html>

@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(45deg, rgb(79, 136, 190), rgb(42, 65, 165));
+    background-image: linear-gradient(50deg, rgb(79, 136, 190), rgb(42, 65, 165));
 }
 .placar{
     width: 325px;
@@ -11,7 +11,11 @@ body{
 h1{
     font-size: 48px;
 }
-h1,h2,h3,p{
+#resultado{
+    width: fit-content;
+    background-color: rgb(72, 152, 228);
+}
+h1,h2,h3,p,span{
     font-family: arial;
     text-align: center;
     margin: 25px auto;
