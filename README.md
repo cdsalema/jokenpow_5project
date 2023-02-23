@@ -21,4 +21,4 @@
   - [X] <a href="https://jokenpow.netlify.app/"> clique aqui</a>
 
   ### Layout Base para o game:</br>
-  <img src="https://github.com/cdsalema/jokenpow_5project/blob/main/assets/images/LayoutBaseJOKEnPOW1.png">
+  <img src="https://github.com/cdsalema/jokenpow_5project/blob/main/assets/images/LayoutBaseJOKEnPOW.png">
