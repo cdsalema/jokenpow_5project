@@ -24,7 +24,7 @@ function play(jogadaPlayer){
         const jogadaRandom = Math.floor(Math.random()*jogadasPossiveis.length);
         const jogadaPC = jogadasPossiveis[jogadaRandom];
         let iconejogadaPC;
-      
+              
             switch (`${jogadaPC}_${jogadaPlayer}`) {
                 case `pedra_pedra`:
                 mensagem = "EMPATE! 🤦";
@@ -51,6 +51,8 @@ function play(jogadaPlayer){
                 mensagem = `PERDEU!! escolhi ${PCescolha()}`;
                 placarPC++;
                 break;
+                
+           
             }   vencedorPartida();
    
             function vencedorPartida(){
@@ -64,9 +66,9 @@ function play(jogadaPlayer){
                 }else if (placarPlayer===3){
                     mensagem =`Você foi o Vencedor! escolhi ${PCescolha()}`
                     acabou=1;
-                    document.querySelector('.opcao').innerText = "❌";
-                    document.querySelector('.opcao1').innerText = "❌";
-                    document.querySelector('.opcao2').innerText = "❌";
+                    document.querySelector('.opcao').innerText ="🥇";
+                    document.querySelector('.opcao1').innerText ="🥇";
+                    document.querySelector('.opcao2').innerText ="🥇";
                     ReiniciarPartida();       
                 }
             }
@@ -88,4 +90,10 @@ function play(jogadaPlayer){
             document.querySelector('#placarPC').innerText = placarPC;
             document.querySelector('.mensagem').innerText = mensagem;
     } 
+            
 }
+
+
+
+
+
