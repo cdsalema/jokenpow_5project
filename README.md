@@ -1,4 +1,3 @@
-﻿# jokenpow_5project
  # Jogo JOKENPO
  
  ## Criação do jogo JOKENPO em JS. Objetivo desse projeto é simplesmente treinar a utilização da linguagem JS sem muita preocupação com beleza da parte visual do jogo. 
