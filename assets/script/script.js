@@ -5,11 +5,16 @@ let mensagem= "";
 let acabou = 0;
 
 function refresh(){
+    document.querySelector('.mensagem').value = "";
     location.reload();
+    
 }
 
 function ReiniciarPartida(){
+    //document.querySelector('.mensagem').value = "";
     let timerId = setTimeout(refresh,2000);
+    
+    
 }
 
 function desistir(){
@@ -88,7 +93,7 @@ function play(jogadaPlayer){
     
             document.querySelector('#placarPlayer').innerText = placarPlayer;
             document.querySelector('#placarPC').innerText = placarPC;
-            document.querySelector('.mensagem').innerText = mensagem;
+            document.querySelector('.mensagem').value = mensagem;
     } 
             
 }
