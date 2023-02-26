@@ -24,7 +24,7 @@ function desistir(){
 }
 
 function play(jogadaPlayer){
-   if (acabou!=false){
+   if (acabou!=true){
         const jogadaRandom = Math.floor(Math.random()*jogadasPossiveis.length);
         const jogadaPC = jogadasPossiveis[jogadaRandom];
         let iconejogadaPC;
