@@ -1,8 +1,8 @@
 const jogadasPossiveis = ['pedra','papel','tesoura'];
 let placarPlayer = 0;
-let placarPC = 0 + ``;
+let placarPC = 0 ;
 let mensagem= "";
-let acabou = 0;
+let acabou = false;
 
 function refresh(){
     document.querySelector('.mensagem').value = "";
@@ -11,7 +11,6 @@ function refresh(){
 }
 
 function ReiniciarPartida(){
-    //document.querySelector('.mensagem').value = "";
     let timerId = setTimeout(refresh,2000);
     
     
@@ -25,7 +24,7 @@ function desistir(){
 }
 
 function play(jogadaPlayer){
-   if (acabou!=1){
+   if (acabou!=false){
         const jogadaRandom = Math.floor(Math.random()*jogadasPossiveis.length);
         const jogadaPC = jogadasPossiveis[jogadaRandom];
         let iconejogadaPC;
@@ -63,14 +62,14 @@ function play(jogadaPlayer){
             function vencedorPartida(){
                 if(placarPC===3 ){
                     mensagem =`POW! Eu ganhei!! escolhi ${PCescolha()}`
-                    acabou=1;
+                    acabou=true;
                     document.querySelector('.opcao').innerText = "❌";
                     document.querySelector('.opcao1').innerText = "❌";
                     document.querySelector('.opcao2').innerText = "❌";
                     ReiniciarPartida();  
                 }else if (placarPlayer===3){
                     mensagem =`Você foi o Vencedor! escolhi ${PCescolha()}`
-                    acabou=1;
+                    acabou=true;
                     document.querySelector('.opcao').innerText ="🥇";
                     document.querySelector('.opcao1').innerText ="🥇";
                     document.querySelector('.opcao2').innerText ="🥇";
