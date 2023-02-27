@@ -3,10 +3,7 @@ let placarPlayer = 0;
 let placarPC = 0 ;
 let mensagem= "";
 let acabou = false;
-<<<<<<< HEAD
 
-=======
->>>>>>> 6dde6e0d07c62799825792b8128657e3814d3a49
 
 function refresh(){
     document.querySelector('.mensagem').value = "";
@@ -14,10 +11,7 @@ function refresh(){
 }
 
 function ReiniciarPartida(){
-<<<<<<< HEAD
     document.querySelector('.mensagem').value = "";
-=======
->>>>>>> 6dde6e0d07c62799825792b8128657e3814d3a49
     let timerId = setTimeout(refresh,2000);
 }
 
@@ -33,13 +27,9 @@ function play(jogadaPlayer){
         const jogadaRandom = Math.floor(Math.random()*jogadasPossiveis.length);
         const jogadaPC = jogadasPossiveis[jogadaRandom];
         let iconejogadaPC;
-<<<<<<< HEAD
         let historico =[];
         
-=======
-        let historico=[];
->>>>>>> 581aa904943a4a123d5b741eec91c43d59a45022
-              
+                   
             switch (`${jogadaPC}_${jogadaPlayer}`) {
                 case `pedra_pedra`:
                 mensagem = "EMPATE! 🤦";
@@ -53,48 +43,27 @@ function play(jogadaPlayer){
                 case `pedra_papel`:
                 mensagem = `GANHOU! escolhi ${PCescolha()}`;
                 placarPlayer++;
-<<<<<<< HEAD
-                historico.push(jogadaPlayer+jogadaPC);
-=======
-                historico.push(("PC:"+jogadaPC+" - ")+("VC:"+jogadaPlayer+" - "))
->>>>>>> 581aa904943a4a123d5b741eec91c43d59a45022
+                historico.push((("PC:"+jogadaPC+" - ")+("VC:"+jogadaPlayer+" - ")))
                 break;
                 case `papel_tesoura`:
                 mensagem = `GANHOU! escolhi ${PCescolha()}`;
                 placarPlayer++;
-<<<<<<< HEAD
-                historico.push(jogadaPlayer+jogadaPC);
-=======
-                historico.push(("PC:"+jogadaPC+" - ")+("VC:"+jogadaPlayer+" - "))
->>>>>>> 581aa904943a4a123d5b741eec91c43d59a45022
+                historico.push((("PC:"+jogadaPC+" - ")+("VC:"+jogadaPlayer+" - ")))
                 break;
                 case `tesoura_pedra`:
                 mensagem = `GANHOU! escolhi ${PCescolha()}`;
                 placarPlayer++;
-<<<<<<< HEAD
-                historico.push(jogadaPlayer+jogadaPC);
-=======
-                historico.push(("PC:"+jogadaPC+" - ")+("VC:"+jogadaPlayer+" - "))
->>>>>>> 581aa904943a4a123d5b741eec91c43d59a45022
+                historico.push((("PC:"+jogadaPC+" - ")+("VC:"+jogadaPlayer+" - ")))
                 break;
                 default:
                 mensagem = `PERDEU!! escolhi ${PCescolha()}`;
                 placarPC++;
-<<<<<<< HEAD
-                historico.push(jogadaPlayer+jogadaPC);
-                break;
-                
-                           
-            }  console.log(historico) 
-                vencedorPartida();
-=======
-                historico.push(("PC:"+jogadaPC+" - ")+("VC:"+jogadaPlayer+" - "))
+                historico.push((("PC:"+jogadaPC+" - ")+("VC:"+jogadaPlayer+" - ")))
                 break;
                 
            
             }   vencedorPartida();
                 console.log(historico);
->>>>>>> 581aa904943a4a123d5b741eec91c43d59a45022
    
             function vencedorPartida(){
                 if(placarPC===3 ){
