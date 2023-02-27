@@ -33,8 +33,12 @@ function play(jogadaPlayer){
         const jogadaRandom = Math.floor(Math.random()*jogadasPossiveis.length);
         const jogadaPC = jogadasPossiveis[jogadaRandom];
         let iconejogadaPC;
+<<<<<<< HEAD
         let historico =[];
         
+=======
+        let historico=[];
+>>>>>>> 581aa904943a4a123d5b741eec91c43d59a45022
               
             switch (`${jogadaPC}_${jogadaPlayer}`) {
                 case `pedra_pedra`:
@@ -49,27 +53,48 @@ function play(jogadaPlayer){
                 case `pedra_papel`:
                 mensagem = `GANHOU! escolhi ${PCescolha()}`;
                 placarPlayer++;
+<<<<<<< HEAD
                 historico.push(jogadaPlayer+jogadaPC);
+=======
+                historico.push(("PC:"+jogadaPC+" - ")+("VC:"+jogadaPlayer+" - "))
+>>>>>>> 581aa904943a4a123d5b741eec91c43d59a45022
                 break;
                 case `papel_tesoura`:
                 mensagem = `GANHOU! escolhi ${PCescolha()}`;
                 placarPlayer++;
+<<<<<<< HEAD
                 historico.push(jogadaPlayer+jogadaPC);
+=======
+                historico.push(("PC:"+jogadaPC+" - ")+("VC:"+jogadaPlayer+" - "))
+>>>>>>> 581aa904943a4a123d5b741eec91c43d59a45022
                 break;
                 case `tesoura_pedra`:
                 mensagem = `GANHOU! escolhi ${PCescolha()}`;
                 placarPlayer++;
+<<<<<<< HEAD
                 historico.push(jogadaPlayer+jogadaPC);
+=======
+                historico.push(("PC:"+jogadaPC+" - ")+("VC:"+jogadaPlayer+" - "))
+>>>>>>> 581aa904943a4a123d5b741eec91c43d59a45022
                 break;
                 default:
                 mensagem = `PERDEU!! escolhi ${PCescolha()}`;
                 placarPC++;
+<<<<<<< HEAD
                 historico.push(jogadaPlayer+jogadaPC);
                 break;
                 
                            
             }  console.log(historico) 
                 vencedorPartida();
+=======
+                historico.push(("PC:"+jogadaPC+" - ")+("VC:"+jogadaPlayer+" - "))
+                break;
+                
+           
+            }   vencedorPartida();
+                console.log(historico);
+>>>>>>> 581aa904943a4a123d5b741eec91c43d59a45022
    
             function vencedorPartida(){
                 if(placarPC===3 ){
