@@ -1,9 +1,12 @@
 const jogadasPossiveis = ['pedra','papel','tesoura'];
 let placarPlayer = 0;
-let placarPC = 0 + ``;
+let placarPC = 0 ;
 let mensagem= "";
 let acabou = false;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6dde6e0d07c62799825792b8128657e3814d3a49
 
 function refresh(){
     document.querySelector('.mensagem').value = "";
@@ -11,7 +14,10 @@ function refresh(){
 }
 
 function ReiniciarPartida(){
+<<<<<<< HEAD
     document.querySelector('.mensagem').value = "";
+=======
+>>>>>>> 6dde6e0d07c62799825792b8128657e3814d3a49
     let timerId = setTimeout(refresh,2000);
 }
 
