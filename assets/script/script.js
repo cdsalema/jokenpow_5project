@@ -28,6 +28,7 @@ function play(jogadaPlayer){
         const jogadaRandom = Math.floor(Math.random()*jogadasPossiveis.length);
         const jogadaPC = jogadasPossiveis[jogadaRandom];
         let iconejogadaPC;
+        let historico=[];
               
             switch (`${jogadaPC}_${jogadaPlayer}`) {
                 case `pedra_pedra`:
@@ -42,22 +43,27 @@ function play(jogadaPlayer){
                 case `pedra_papel`:
                 mensagem = `GANHOU! escolhi ${PCescolha()}`;
                 placarPlayer++;
+                historico.push("PC:"+jogadaPC+" - "+"VC:"+jogadaPlayer+" - ")
                 break;
                 case `papel_tesoura`:
                 mensagem = `GANHOU! escolhi ${PCescolha()}`;
                 placarPlayer++;
+                historico.push("PC:"+jogadaPC+" - "+"VC:"+jogadaPlayer+" - ")
                 break;
                 case `tesoura_pedra`:
                 mensagem = `GANHOU! escolhi ${PCescolha()}`;
                 placarPlayer++;
+                historico.push("PC:"+jogadaPC+" - "+"VC:"+jogadaPlayer+" - ")
                 break;
                 default:
                 mensagem = `PERDEU!! escolhi ${PCescolha()}`;
                 placarPC++;
+                historico.push("PC:"+jogadaPC+" - "+"VC:"+jogadaPlayer+" - ")
                 break;
                 
            
             }   vencedorPartida();
+                console.log(historico);
    
             function vencedorPartida(){
                 if(placarPC===3 ){
