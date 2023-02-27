@@ -27,7 +27,7 @@ function play(jogadaPlayer){
         const jogadaRandom = Math.floor(Math.random()*jogadasPossiveis.length);
         const jogadaPC = jogadasPossiveis[jogadaRandom];
         let iconejogadaPC;
-        let historico =[];
+        let historico =[0,1,2,3,4];
         
                    
             switch (`${jogadaPC}_${jogadaPlayer}`) {
