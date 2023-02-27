@@ -28,8 +28,7 @@ function play(jogadaPlayer){
         const jogadaPC = jogadasPossiveis[jogadaRandom];
         let iconejogadaPC;
         let historico =[0,1,2,3,4];
-        
-                   
+                          
             switch (`${jogadaPC}_${jogadaPlayer}`) {
                 case `pedra_pedra`:
                 mensagem = "EMPATE! 🤦";
