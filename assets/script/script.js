@@ -11,14 +11,26 @@ function refresh(){
 
 function ReiniciarPartida(){
     document.querySelector('.mensagem').value = "";
-    let timerId = setTimeout(refresh,2000);
+    let timer = setTimeout(refresh,2000);
 }
 
 function desistir(){
     if(confirm("Vai arregar?")==true){
-        alert("🐔🐔🐔🐔🐔!")
+        alert("!!🐔🐔🐔🐔🐔!!")
         refresh();
     }
+}
+function icones(){
+    document.querySelector('.opcao').innerText = "✊";
+    document.querySelector('.opcao1').innerText = "🤚";
+    document.querySelector('.opcao2').innerText = "✌️";
+}
+
+function empate(){
+    document.querySelector('.opcao').innerText = "🤦";
+    document.querySelector('.opcao1').innerText = "🤦";
+    document.querySelector('.opcao2').innerText = "🤦";
+    let timer=setTimeout(icones,700);
 }
 
 function play(jogadaPlayer){
@@ -31,12 +43,15 @@ function play(jogadaPlayer){
             switch (`${jogadaPC}_${jogadaPlayer}`) {
                 case `pedra_pedra`:
                 mensagem = "EMPATE! 🤦";
+                empate();
                 break;
                 case `papel_papel`:
                 mensagem = "EMPATE! 🤦";
+                empate();
                 break;
                 case `tesoura_tesoura`:
                 mensagem = "EMPATE! 🤦";
+                empate();
                 break;
                 case `pedra_papel`:
                 mensagem = `GANHOU! escolhi ${PCescolha()}`;
