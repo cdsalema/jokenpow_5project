@@ -11,7 +11,7 @@ function refresh(){
 
 function ReiniciarPartida(){
     document.querySelector('.mensagem').value = "";
-    let timer = setTimeout(refresh,2000);
+    let timer = setTimeout(refresh,1500);
 }
 
 function desistir(){
