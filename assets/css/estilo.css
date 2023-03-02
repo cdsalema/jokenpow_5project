@@ -67,5 +67,6 @@ input {
     width: 280px;
     background-color: rgb(137, 187, 233);
     border-radius: 10px;
+    cursor:not-allowed;
     
 }
