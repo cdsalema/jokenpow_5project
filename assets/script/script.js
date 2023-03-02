@@ -4,6 +4,11 @@ let placarPC = 0 ;
 let mensagem= "";
 let acabou = false;
 
+
+function limpaConsole(){
+    document.querySelector('.mensagem').value = "";
+}
+
 function refresh(){
     document.querySelector('.mensagem').value = "";
     location.reload();
@@ -11,7 +16,7 @@ function refresh(){
 
 function ReiniciarPartida(){
     document.querySelector('.mensagem').value = "";
-    let timer = setTimeout(refresh,1500);
+    let timer = setTimeout(refresh,2000);
 }
 
 function desistir(){
@@ -21,16 +26,18 @@ function desistir(){
     }
 }
 function icones(){
+    acabou=false;
     document.querySelector('.opcao').innerText = "✊";
     document.querySelector('.opcao1').innerText = "🤚";
     document.querySelector('.opcao2').innerText = "✌️";
 }
 
 function empate(){
+    acabou=true;
     document.querySelector('.opcao').innerText = "🤦";
     document.querySelector('.opcao1').innerText = "🤦";
     document.querySelector('.opcao2').innerText = "🤦";
-    let timer=setTimeout(icones,700);
+    let timer=setTimeout(icones,1000);
 }
 
 function play(jogadaPlayer){
@@ -42,15 +49,15 @@ function play(jogadaPlayer){
                           
             switch (`${jogadaPC}_${jogadaPlayer}`) {
                 case `pedra_pedra`:
-                mensagem = "EMPATE! 🤦";
+                mensagem = `EMPATE! 🤦 escolhemos ${PCescolha()}`;
                 empate();
                 break;
                 case `papel_papel`:
-                mensagem = "EMPATE! 🤦";
+                mensagem = `EMPATE! 🤦 escolhemos ${PCescolha()}`;
                 empate();
                 break;
                 case `tesoura_tesoura`:
-                mensagem = "EMPATE! 🤦";
+                mensagem = `EMPATE! 🤦 escolhemos ${PCescolha()}`;
                 empate();
                 break;
                 case `pedra_papel`:
@@ -76,6 +83,10 @@ function play(jogadaPlayer){
                 
            
             }   vencedorPartida();
+            let timerid = setTimeout(limpaConsole,1000);
+              
+            
+              
            // console.log(historico);
                 
    
