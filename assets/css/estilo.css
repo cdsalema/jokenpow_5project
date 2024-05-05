@@ -33,7 +33,7 @@ div{
     background-color: rgb(79, 136, 190);
     margin-top: 100% ;
     color: white;
-    border-radius: 10px;
+    border-radius: 5%;
 }
 #Desistir:hover{
     background-color: rgb(42, 65, 165);
@@ -54,7 +54,7 @@ button{
     background-color: transparent;
     border: none;
     cursor: pointer;
-    border-radius: 25px;
+    border-radius: 0%;
 }
 button:hover{
     background-color: rgb(81, 142, 199);
